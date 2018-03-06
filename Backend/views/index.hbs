@@ -1,13 +1,15 @@
-<h1>Puppers!</h1>
+<h2>Puppers!</h2>
 
 {{#each puppys}}
-<p>{{title}}</p>
-<p>{{breed}}</p>
-<p>{{favoritetoy}}</p>
-<form action="/puppys/{{this.id}}?_method=delete" method="POST">
-    <input type="submit" value="Remove puppy">
-</form>
-<form action="/puppys/{{this.id}}?_method=put" method="POST">
-    <input type="submit" value="Edit puppy">
-</form>
+<div class="pups">
+    <p>Name: {{title}}</p>
+    <p>Breed: {{breed}}</p>
+    <p>Favorite Toy: {{favoritetoy}}</p>
+</div>
+<div class="buttonz">
+    <a href="/puppys/edit/{{id}}">Edit puppy</a>
+    <form action="/puppys/{{this.id}}?_method=delete" method="POST">
+        <input type="submit" value="Remove puppy">
+    </form>
+</div>
 <br> {{/each}}

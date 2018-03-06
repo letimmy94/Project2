@@ -12,16 +12,15 @@ router.get("/new", (req, res) => {
   res.render("puppys/new");
 });
 
-router.get("/edit", (req, res) => {
+router.get("/edit/:id", (req, res) => {
   Puppy.findOne({ _id: req.params.id }).then(puppy => {
     res.render("puppys/edit", puppy);
   });
 });
 
-//
 router.put("/:id", (req, res) => {
-  Puppy.findOneAndUpdate({ _id: req.params.id }, req.body).then(puppy => {
-    res.redirect("/puppys/edit");
+  Puppy.findOneAndUpdate({ _id: req.params.id }, req.body).then(Puppy => {
+    res.redirect("/");
   });
 });
 

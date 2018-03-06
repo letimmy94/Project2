@@ -1,0 +1,89 @@
+body {
+  background-color: lemonchiffon;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+  border: groove;
+  border-color: silver;
+  border-radius: 10px;
+  padding: 8px;
+  font-size: 80px;
+}
+
+h2 {
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+  font-size: 40px;
+}
+
+p {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+  height: 20px;
+  justify-content: center;
+  padding: 7px;
+}
+
+.pups {
+  border: groove;
+  border-color: silver;
+  border-radius: 10px;
+}
+
+.life {
+  font: bold 11px Arial;
+  text-decoration: none;
+  padding: 3px;
+}
+
+.life a {
+  font: bold 15px Arial;
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #333333;
+  padding: 5px;
+  border-radius: 8px;
+  border-top: 1px solid #cccccc;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #cccccc;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 230px;
+  height: 20px;
+  justify-content: center;
+}
+
+.buttonz {
+  font: bold 11px Arial;
+  text-decoration: none;
+  padding: 5px;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttonz form input {
+  font: bold 11px Arial;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #d4d4d485;
+}
+
+.buttonz a {
+  border: groove;
+  border-radius: 5px;
+  padding: 6px;
+  text-decoration: none;
+}

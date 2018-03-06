@@ -5,7 +5,10 @@ const bodyParser = require("body-parser");
 const methodOverride = require("method-override");
 const cookieParser = require("cookie-parser");
 const pupController = require("./controllers/puppy");
+const path = require("path");
 const app = express();
+
+app.use(express.static(path.join(__dirname, "public")));
 
 app.set("view engine", "hbs");
 
