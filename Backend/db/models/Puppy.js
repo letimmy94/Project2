@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require("../db/connection");
 
 const pupSchema = new mongoose.Schema({
   title: String,
@@ -6,6 +6,6 @@ const pupSchema = new mongoose.Schema({
   favoriteToy: String
 });
 
-mongoose.model("Puppy", pupSchema);
+const Puppy = mongoose.model("Puppy", pupSchema);
 
-module.exports = mongoose;
+module.exports = Puppy;

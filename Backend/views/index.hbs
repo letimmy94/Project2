@@ -4,4 +4,10 @@
 <p>{{title}}</p>
 <p>{{breed}}</p>
 <p>{{favoritetoy}}</p>
+<form action="/puppys/{{this.id}}?_method=delete" method="POST">
+    <input type="submit" value="Remove puppy">
+</form>
+<form action="/puppys/{{this.id}}?_method=put" method="POST">
+    <input type="submit" value="Edit puppy">
+</form>
 <br> {{/each}}
