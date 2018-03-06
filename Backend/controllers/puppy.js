@@ -4,7 +4,7 @@ const Puppy = require("../models/Puppy");
 
 router.post("/", (req, res) => {
   Puppy.create(req.body).then(puppy => {
-    res.redirect(`/puppies/${puppy.id}`);
+    res.redirect("/");
   });
 });
 
@@ -12,7 +12,7 @@ router.get("/new", (req, res) => {
   res.render("puppys/new");
 });
 
-router.get("/edit/:id", (req, res) => {
+router.get("/edit", (req, res) => {
   Puppy.findOne({ _id: req.params.id }).then(puppy => {
     res.render("puppys/edit", puppy);
   });
@@ -21,7 +21,7 @@ router.get("/edit/:id", (req, res) => {
 //
 router.put("/:id", (req, res) => {
   Puppy.findOneAndUpdate({ _id: req.params.id }, req.body).then(puppy => {
-    res.redirect("/");
+    res.redirect("/puppys/edit");
   });
 });
 
