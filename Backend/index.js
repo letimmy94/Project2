@@ -26,4 +26,8 @@ app.get("/", (req, res) => {
 
 app.use("/puppys", pupController);
 
-app.listen(4000, () => console.log("Reporting for doodie port 4000"));
+app.set("port", process.env.PORT || 4000);
+
+app.listen(app.get("port"), () => {
+  console.log(`Reporting for doodie PORT: ${app.get("port")}`);
+});
