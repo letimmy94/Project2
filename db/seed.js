@@ -3,14 +3,14 @@ const Puppy = require("../models/Puppy");
 Puppy.remove({}).then(() => {
   Promise.all([
     Puppy.create({
-      name: "Storm",
+      title: "Storm",
       breed: "Siberian Husky",
-      favoriteToy: "Bouncy Ball"
+      favoritetoy: "Bouncy Ball"
     }),
     Puppy.create({
-      name: "Goliath",
+      title: "Goliath",
       breed: "Golden Retriever",
-      favoriteToy: "Stuffed bear named David"
+      favoritetoy: "Stuffed bear named David"
     })
   ]).then(() => {
     console.log("woof");

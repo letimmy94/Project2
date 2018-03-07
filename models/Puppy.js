@@ -1,9 +1,18 @@
 const mongoose = require("../db/connection");
 
 const PuppySchema = new mongoose.Schema({
-  name: String,
-  breed: String,
-  favoriteToy: String
+  title: {
+    type: String,
+    required: true
+  },
+  breed: {
+    type: String,
+    required: true
+  },
+  favoritetoy: {
+    type: String,
+    required: true
+  }
 });
 
 const Puppy = mongoose.model("Puppy", PuppySchema);
