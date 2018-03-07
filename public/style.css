@@ -95,7 +95,7 @@ p {
 }
 
 .buttonz a {
-  border: groove;
+  border: solid;
   border-radius: 5px;
   color: black;
   padding: 10px;
