@@ -1,19 +1,23 @@
 body {
   background-color: lemonchiffon;
-  margin: auto;
+  margin: auto 100;
   display: flex;
   flex-wrap: wrap;
-  width: 400px;
   justify-content: center;
+}
+
+header {
+  width: 1000px;
 }
 
 h1 {
   font-family: "Indie Flower", cursive;
   text-align: center;
   border: groove;
-  border-color: silver;
-  border-radius: 10px;
-  padding: 8px;
+  border-width: 10px;
+  border-color: rgba(192, 192, 192, 0.507);
+  border-radius: 50px;
+  padding: 10px;
   font-size: 80px;
 }
 
@@ -21,14 +25,15 @@ h2 {
   font-family: "Indie Flower", cursive;
   text-align: center;
   font-size: 40px;
+  width: 1000px;
 }
 
 p {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  width: 280px;
-  height: 20px;
+  width: 500px;
+  height: 24px;
   justify-content: center;
   padding: 7px;
 }
@@ -37,6 +42,12 @@ p {
   border: groove;
   border-color: silver;
   border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  width: 250px;
+  height: 150px;
+  text-align: center;
 }
 
 .life {
@@ -68,14 +79,15 @@ p {
   font: bold 11px Arial;
   text-decoration: none;
   padding: 5px;
-  width: 200px;
+  width: 250px;
   display: flex;
   justify-content: space-around;
 }
 
 .buttonz form input {
   font: bold 11px Arial;
-  border: none;
+  border: solid;
+  border-color: black;
   border-radius: 5px;
   padding: 10px;
   background-color: #d4d4d485;
@@ -84,6 +96,8 @@ p {
 .buttonz a {
   border: groove;
   border-radius: 5px;
-  padding: 6px;
+  color: black;
+  padding: 10px;
   text-decoration: none;
+  background-color: #d4d4d485;
 }
