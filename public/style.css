@@ -1,13 +1,18 @@
 body {
-  background-color: lemonchiffon;
+  background-image: url("https://i.pinimg.com/originals/2b/ef/8a/2bef8ad9b5a3a86793fd48bdab158262.jpg");
+  background-size: cover;
   margin: auto 100;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 header {
   width: 1000px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 h1 {
@@ -22,13 +27,19 @@ h1 {
 }
 
 h2 {
+  border: groove;
+  border-radius: 10px;
+  background-color: rgba(192, 192, 192, 0.5);
   font-family: "Indie Flower", cursive;
   text-align: center;
-  font-size: 40px;
-  width: 1000px;
+  font-size: 60px;
+  width: 250px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 p {
+  background-color: rgba(192, 192, 192, 0.301);
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -36,6 +47,7 @@ p {
   height: 24px;
   justify-content: center;
   padding: 7px;
+  font-family: "Schoolbell", cursive;
 }
 
 .pups {
