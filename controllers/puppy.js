@@ -1,10 +1,20 @@
 const express = require("express");
 const router = express.Router();
+const fileUpload = require("express-fileupload");
 const Puppy = require("../models/Puppy");
 
 router.post("/", (req, res) => {
   Puppy.create(req.body).then(puppy => {
     res.redirect("/");
+  });
+});
+
+router.post("/uploads", function(req, res) {
+  if (!req.files) return res.status(400).send("No files uploaded.");
+  let sampleFile = req.files.sampleFile;
+  sampleFile.mv("/uploads/filename.jpg", function(err) {
+    if (err) return res.status(500).send(err);
+    res.send("File uploaded!");
   });
 });
 
