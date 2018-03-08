@@ -31,9 +31,11 @@ app.post("/uploads", function(req, res) {
 });
 
 app.get("/", (req, res) => {
-  Puppy.find({}).then(puppys => {
-    res.render("index", { puppys });
-  });
+  Puppy.find({})
+    .sort([["_id", -1]])
+    .then(puppys => {
+      res.render("index", { puppys });
+    });
 });
 
 app.use("/puppys", pupController);
