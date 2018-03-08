@@ -38,6 +38,18 @@ h2 {
   margin-bottom: 30px;
 }
 
+h3 {
+  border: groove;
+  border-radius: 10px;
+  background-color: rgba(192, 192, 192, 0.5);
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+  font-size: 60px;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
 p {
   background-color: rgba(192, 192, 192, 0.301);
   margin: auto;
@@ -46,7 +58,7 @@ p {
   width: 500px;
   height: 24px;
   justify-content: center;
-  padding: 7px;
+  padding: 12px;
   font-family: "Schoolbell", cursive;
 }
 
@@ -57,9 +69,10 @@ p {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  padding: 30px;
-  width: 260px;
-  height: 160px;
+  margin-bottom: 25px;
+  padding: 20px 30px 50px 30px;
+  width: 300px;
+  height: 180px;
   text-align: center;
 }
 
@@ -91,7 +104,7 @@ p {
 .buttonz {
   font: bold 11px Arial;
   text-decoration: none;
-  padding: 5px;
+  padding: 10px;
   width: 250px;
   display: flex;
   justify-content: space-around;
@@ -113,4 +126,16 @@ p {
   padding: 10px;
   text-decoration: none;
   background-color: #d4d4d485;
+}
+
+.newPupForm {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 0 auto;
+  width: 25%;
+}
+
+.newPupForm input {
+  margin: 0 auto;
 }

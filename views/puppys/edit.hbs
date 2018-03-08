@@ -1,6 +1,8 @@
-<form action="/puppys/{{id}}?_method=put" method="POST">
-    <input type="text" name="title" placeholder="Name">
-    <input type="text" name="breed" placeholder="Breed">
-    <input type="text" name="favoritetoy" placeholder="Favorite Toy">
-    <input type="submit" placeholder="Update">
-</form>
+<div class="newPupForm">
+    <form action="/puppys/{{id}}?_method=put" method="POST">
+        <input type="text" name="title" value="{{title}}">
+        <input type="text" name="breed" value="{{breed}}">
+        <input type="text" name="favoritetoy" value="{{favoritetoy}}">
+        <input type="submit" value="Update">
+    </form>
+</div>
